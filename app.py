@@ -3,7 +3,7 @@
 
 import json
 from flask import Flask, request, jsonify
-import os
+# import os
 
 app = Flask(__name__)
 
@@ -27,7 +27,7 @@ def query_records3():
 def hello_world():
     return 'Hello, World!'
 
-if os.environ.get("DEBUG") == "True":
-    app.run(debug=True)
-else:
-    app.run(debug=False)
+# if os.environ.get("DEBUG") == "True":
+#     app.run(debug=True)
+# else:
+#     app.run(debug=False)
