@@ -15,5 +15,7 @@ def query_records():
 def hello_world():
     return 'Hello, World!'
 
-
-# app.run(debug=True)
+if os.environ.get("DEBUG") == "True":
+    app.run(debug=True)
+else:
+    app.run(debug=False)
